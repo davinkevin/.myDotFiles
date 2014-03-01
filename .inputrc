@@ -1,0 +1,11 @@
+# Quick tips on InputRC : http://brettterpstra.com/2011/09/25/quick-tip-some-inputrc-fun/
+
+# Search in pas comand 
+"\e\e[A": history-search-backward
+"\e\e[B": history-search-forward
+
+# Move up in folder
+"\e\e[5~": "cd ..\015"
+
+# Use Alt/Meta + Delete to delete the preceding word
+"\e[3;3~": kill-word
