@@ -1,13 +1,8 @@
 function fish_prompt
-        #set_color --bold 97D455
-        set_color --bold green
-        echo -n (hostname -s)":";
-        set_color --bold white
-        echo -n (echo $PWD | sed -e "s|^$HOME|~|" -e 's|^/private||')
-        #set_color --bold 92E7E8
-        set_color --bold cyan
-        echo -n " "
-        echo -n (whoami)
-        set_color normal
-        echo -n ' $ '
-  end
+    # Just calculate this once, to save a few cycles when displaying the prompt
+    if not set -q __fish_prompt_hostname
+        set -g __fish_prompt_hostname (hostname|cut -d . -f 1)
+    end
+
+    echo -n -s (set_color --bold green) "$__fish_prompt_hostname" ":" (set_color --bold white) (prompt_pwd) (set_color --bold cyan) (whoami) (set_color normal) ' $ '
+end
