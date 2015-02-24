@@ -4,5 +4,5 @@ function fish_prompt
         set -g __fish_prompt_hostname (hostname|cut -d . -f 1)
     end
 
-    echo -n -s (set_color --bold green) "$__fish_prompt_hostname" ":" (set_color --bold white) (prompt_pwd) (set_color --bold cyan) (whoami) (set_color normal) ' $ '
+    echo -n (set_color --bold green)"$__fish_prompt_hostname"":"(set_color --bold white)(prompt_pwd) (set_color --bold cyan)(whoami)(set_color normal)' $ '
 end
