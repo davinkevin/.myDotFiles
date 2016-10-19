@@ -1,3 +1,8 @@
 .DS_Store
 .backup/
 fishd.*
+
+# Specific to fish :
+.config/fish/fish_history
+.config/fish/fish_read_history
+
