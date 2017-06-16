@@ -20,5 +20,9 @@ cd $dir
 # move any existing dotfiles in homedir to dotfiles_old directory, then create symlinks 
 echo "Backuping old fish config to $olddir"
 rsync -avq --remove-source-files --force ${HOME}/.config/fish $olddir
-echo "Creating symlink to $git_fish_config in home directory."
+
+echo "Fish: Creating symlink to $git_fish_config in home directory."
 ln -s git_fish_config fish_installation
+
+echo "Git: Installation of global config"
+ln -s ${HOME}/.myDotFiles/.gitignore_global ${HOME}/.gitignore_global
