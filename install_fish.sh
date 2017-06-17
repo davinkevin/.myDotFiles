@@ -26,3 +26,6 @@ ln -s git_fish_config fish_installation
 
 echo "Git: Installation of global config"
 ln -s ${HOME}/.myDotFiles/.gitignore_global ${HOME}/.gitignore_global
+
+echo "Keyboard: Install shortcut for moving inside line in term"
+ln -s ${HOME}/.myDotFiles/.inputrc ${HOME}/.inputrc
