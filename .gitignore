@@ -6,7 +6,7 @@ fishd.*
 .config/fish/fish_history
 .config/fish/fish_read_history
 
-# Specific to fnm
+# Specific to extension which is not relevant in this project
 /.config/fish/functions/__fnm_usage.fish
 /.config/fish/functions/__fnm_version_download.fish
 /.config/fish/functions/__fnm_version_validate.fish
@@ -26,3 +26,8 @@ fishd.*
 /.config/fish/functions/get_file_age.fish
 /.config/fish/functions/node.fish
 /.config/fish/functions/menu.fish
+/.config/fish/conf.d/fnm.fish
+/.config/fish/completions/fisher.fish
+/.config/fish/completions/fnm.fish
+/.config/fish/functions/last_job_id.fish
+/.config/fish/fishfile
