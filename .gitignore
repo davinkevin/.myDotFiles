@@ -6,3 +6,23 @@ fishd.*
 .config/fish/fish_history
 .config/fish/fish_read_history
 
+# Specific to fnm
+/.config/fish/functions/__fnm_usage.fish
+/.config/fish/functions/__fnm_version_download.fish
+/.config/fish/functions/__fnm_version_validate.fish
+/.config/fish/functions/__fnm_list.fish
+/.config/fish/functions/__fnm_mirror.fish
+/.config/fish/functions/await.fish
+/.config/fish/functions/__fnm_run_bin_as.fish
+/.config/fish/functions/__fnm_use.fish
+/.config/fish/functions/__fnm_version_query.fish
+/.config/fish/functions/__fnm_read_fnmrc.fish
+/.config/fish/functions/__fnm_version_which.fish
+/.config/fish/functions/fnm.fish
+/.config/fish/functions/__fnm_index_update.fish
+/.config/fish/functions/__fnm_rm.fish
+/.config/fish/functions/__fnm_version_local.fish
+/.config/fish/functions/npm.fish
+/.config/fish/functions/get_file_age.fish
+/.config/fish/functions/node.fish
+/.config/fish/functions/menu.fish
