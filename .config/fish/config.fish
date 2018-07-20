@@ -1,7 +1,10 @@
 set fish_greeting ""
 
-# Set PATH : 
-set -gx PATH /usr/local/opt/coreutils/libexec/gnubin $PATH ./node_modules/.bin/
+# JAVA_HOME
+set -gx JAVA_HOME (/usr/libexec/java_home -v '1.8*')
+
+# Set PATH :
+set -gx PATH $JAVA_HOME/bin/ /usr/local/opt/coreutils/libexec/gnubin $PATH ./node_modules/.bin/
 
 # Autojump
 [ -f /usr/local/share/autojump/autojump.fish ]; and . /usr/local/share/autojump/autojump.fish
@@ -15,3 +18,6 @@ eval (direnv hook fish)
 # SimpleHttp2Server
 alias http-server="simplehttp2server"
 
+# Kubernetes: 
+# * kubectl
+alias kub="kubectl"
